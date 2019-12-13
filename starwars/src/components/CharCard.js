@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from "react";
 import styled from "styled-components";
-import {Card, CardText, CardBody,
-    CardTitle, CardSubtitle, Button } from "reactstrap"
-import axios from "axios";
+// import {Card, CardText, CardBody,
+//     CardTitle, CardSubtitle, Button } from "reactstrap"
+// import axios from "axios";
 
 
 
 
 export default function CharCard(props){
-    const [planet, setPlanet] = useState([])
+    // const [planet, setPlanet] = useState([])
 
     // useEffect(() =>{
     //     axios.get("https://swapi.co/api/planets/")
@@ -32,11 +32,12 @@ export default function CharCard(props){
 
     const Title = styled.h1`
         text-decoration: underline
+        font-size: 2rem;
         
     `;
 
     const P = styled.p`
-        
+        font-size: 18px;
         font-weight: 600;
     `;
 
