@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import CharCard from "./CharCard";
-
+import './StarWars.css'
 
 
 
@@ -13,7 +13,7 @@ export default function CharList(){
             axios.get("https://swapi.co/api/people/")
             .then(response => {
                 
-                console.log(response.data.results);
+                // console.log(response.data.results);
                 setChar(response.data.results)
             })
             .catch(err => {
@@ -21,14 +21,12 @@ export default function CharList(){
             })
         }, []);
 
-        let characters = char.map( chars => {
-            console.log(chars.name, chars.height, chars.hair_color, chars.gender)
-        })
+       
 
 
     return(
 
-        <div>
+        <div className="character-list"> 
             {char.map(chars =>{
                 return(
                     <CharCard 
