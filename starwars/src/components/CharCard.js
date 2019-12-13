@@ -21,12 +21,12 @@ export default function CharCard(props){
     // }, []);
 
     const Wrapper= styled.div`
-        border: 1px solid blue;
-        box-shadow: 5px 5px 2px blue;
+        border: 3px solid darkorange;
+        box-shadow: 5px 5px 2px darkorange;
         border-radius: 10px;
         margin-bottom: 2%;
         padding: 1%;
-        color: blue;
+        color: white;
         
     `;
 
