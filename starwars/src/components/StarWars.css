@@ -1,0 +1,10 @@
+.character-list{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap row;
+
+}
+
+.character-card{
+    width: 40%;
+}
